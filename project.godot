@@ -11,8 +11,8 @@ config_version=4
 [application]
 
 config/name="2DRPG"
-run/main_scene="res://World.tscn"
-config/icon="res://icon.png"
+run/main_scene="res://Scenes/World.tscn"
+config/icon="res://Art/icon.png"
 
 [display]
 
