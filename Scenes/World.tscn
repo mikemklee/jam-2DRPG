@@ -6,7 +6,14 @@
 
 [node name="World" type="Node2D"]
 
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 320.0
+margin_bottom = 184.0
+texture = ExtResource( 3 )
+stretch_mode = 2
+
 [node name="Sprite" type="Sprite" parent="."]
+visible = false
 position = Vector2( 160, 90 )
 texture = ExtResource( 3 )
 region_enabled = true
