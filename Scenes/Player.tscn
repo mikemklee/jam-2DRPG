@@ -278,9 +278,6 @@ tracks/0/keys = {
 "values": [ 7, 8, 9, 10, 11, 6 ]
 }
 
-[sub_resource type="AnimationNodeAnimation" id=32]
-animation = "AttackRight"
-
 [sub_resource type="AnimationNodeAnimation" id=33]
 animation = "AttackDown"
 
@@ -290,15 +287,18 @@ animation = "AttackRight"
 [sub_resource type="AnimationNodeAnimation" id=35]
 animation = "AttackUp"
 
+[sub_resource type="AnimationNodeAnimation" id=36]
+animation = "AttackLeft"
+
 [sub_resource type="AnimationNodeBlendSpace2D" id=29]
-blend_point_0/node = SubResource( 32 )
-blend_point_0/pos = Vector2( -1, 0 )
-blend_point_1/node = SubResource( 33 )
-blend_point_1/pos = Vector2( 0, 1.1 )
-blend_point_2/node = SubResource( 34 )
-blend_point_2/pos = Vector2( 1, 0 )
-blend_point_3/node = SubResource( 35 )
-blend_point_3/pos = Vector2( 0, -1.1 )
+blend_point_0/node = SubResource( 33 )
+blend_point_0/pos = Vector2( 0, 1.1 )
+blend_point_1/node = SubResource( 34 )
+blend_point_1/pos = Vector2( 1, 0 )
+blend_point_2/node = SubResource( 35 )
+blend_point_2/pos = Vector2( 0, -1.1 )
+blend_point_3/node = SubResource( 36 )
+blend_point_3/pos = Vector2( -1, 0 )
 min_space = Vector2( -1, -1.1 )
 max_space = Vector2( 1, 1.1 )
 blend_mode = 1
@@ -405,6 +405,6 @@ anims/RunUp = SubResource( 4 )
 tree_root = SubResource( 16 )
 anim_player = NodePath("../AnimationPlayer")
 parameters/playback = SubResource( 17 )
-parameters/Attack/blend_position = Vector2( 0.000985265, 0.0105431 )
+parameters/Attack/blend_position = Vector2( -0.99803, 0.0175719 )
 parameters/Idle/blend_position = Vector2( 0, 0 )
 parameters/Run/blend_position = Vector2( 0, 0 )
